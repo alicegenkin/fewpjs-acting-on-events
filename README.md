@@ -168,14 +168,14 @@ Let's wire this up
 ```javascript
 document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowLeft") {
-    moveDodgerLeft();
+    Left();
   }
 });
 ```
 
 Now try moving the dodger past the left edge. No can do!
 
-We have not yet implemented moving the dodger to the right. Can you do it? With
+We hav e not yet implemented moving the dodger to the right. Can you do it? With
 the code implemented from the code along, think about what needs to change to
 make a `moveDodgerRight()` function. We'll need another `e.key` in the event
 listener, and instead of moving the dodger `${left - 1}px`, we'll be moving it
